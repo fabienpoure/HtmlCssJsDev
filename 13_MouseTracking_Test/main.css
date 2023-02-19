@@ -1,0 +1,23 @@
+body
+{
+    /* Couleur de fond */
+    background-color: red;
+}
+
+.social
+{
+    /* Position du logo */
+    position: absolute;
+    
+    /* Dimensions du logo */
+    font-size: 300px;
+
+    /* Aspect */
+    color: black;
+}
+
+.x,.y
+{
+    color: #FFFFFF;
+    font-weight: bold;
+}
