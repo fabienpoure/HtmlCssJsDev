@@ -1,0 +1,64 @@
+body {
+    color: white;
+    background-color: rgb(42, 49, 53);
+    margin-left: 340px;
+    margin-top: 150px;
+    width: 1200px;
+  }
+
+  div {
+      font-family: Arial, sans-serif;
+  }
+  
+  #Spse{
+    margin-bottom: 5px;
+    width: 230px;
+  }
+
+  label{
+    color:#539bf5;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+    .ActionLabel{
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+
+  input{
+    border-style: none;
+    background-color: transparent;
+    border: 1px solid #539BF5;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+    input:focus-visible{
+      outline: 0px;
+    }
+
+  button{
+    margin-top: 12px;
+    margin-bottom: 30px;
+    color: #539bf5;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    border-color: #539bf5;
+    border-style: groove;
+    border-width: 1px;
+  }
+
+  button:hover{
+    background-color: black;
+  }
+
+  .MainWindow{
+    width: 1200px;
+    background-color: cadetblue;
+    padding-block: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }

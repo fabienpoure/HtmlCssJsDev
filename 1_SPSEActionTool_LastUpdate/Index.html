@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS files/style.css">
+    <title>2022Week52HTML Test1</title>
+</head>
+<body>
+        
+    <div class="SpseImg">
+        <img id="Spse" src="Resources/spse_blc.png">
+    </div>
+   
+    <hr>
+       
+    <div class="ActionLabel">
+        <label for="name">Action to be executed</label>
+    </div>
+    
+    <div class="ActionInput">
+        <input type="text" id="theAction" name="action" required minlength="4" maxlength="15" size="20">
+    </div>
+
+    <div class="ActionButton">
+        <button type="button" onclick="getAction();">Execute action</button>
+    </div>
+
+    <div class="MainWindow">
+        Data displayed ...
+    </div>
+
+    <script>
+        
+        function getAction()
+        {
+            var action = document.getElementById("theAction").value;
+            alert(action);
+        }
+    
+    </script>
+    
+</body>
+</html>
