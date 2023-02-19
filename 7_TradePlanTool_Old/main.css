@@ -1,0 +1,76 @@
+body
+{
+    width: fit-content;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(57, 57, 57);
+}
+
+.saisie
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(223 216 216);
+    padding: 35px 60px 15px 60px;
+    font-size: 25px;
+}
+
+    #sdate, #datefonds, #datemensuel
+    {
+        width: 245px;
+    }
+    
+    input
+    {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    hr 
+    {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        margin-bottom: 30px;
+    }
+
+.main
+{
+    width: 900px;
+    display: flex;
+    background-color: white;
+
+    padding: 10px;
+
+}
+
+    .date
+    {
+        flex: 1;
+        margin-left: 155px;
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .gain
+    {
+        flex: 1;
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .final
+    {
+        flex: 1;
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    

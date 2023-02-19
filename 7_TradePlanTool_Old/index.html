@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="saisie">
+
+        <input type="" class="capital" id="capital" value = "7200"> Capital en euros <br/>
+        <input type="" class="cible" id="cible" value = "2"> Cible en % <br/>
+        <input type="date" id="sdate"> Date de départ<br/><script>document.getElementById("sdate").valueAsDate = new Date();</script>
+        <input type="" class="nbjours" id="nbjours" value = "365"> Nombre de jours de calcul <br/>        
+            
+        <hr>
+
+        <input type="" class="capital" id="fonds" value = "0"> Versement de fonds en une seule fois<br/>
+        <input type="date" id="datefonds"> Date de versement<br/><script>document.getElementById("datefonds").valueAsDate = new Date();</script>
+        
+        <hr>
+
+        <input type="" class="capital" id="mensuel" value = "0"> Versement de fonds chaque mois<br/>
+        <input type="date" id="datemensuel"> Date de versement chaque mois<br/><script>document.getElementById("datemensuel").valueAsDate = new Date();</script>
+        
+        <hr>
+
+        <input type="button" value="Calculer" onclick="getAction();">
+        
+    </div>
+
+    <div class="main" id="main">
+        
+        <div class="date" id="date"></div>
+        <div class="gain" id="gain"></div>
+        <div class="final" id="final"></div>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
