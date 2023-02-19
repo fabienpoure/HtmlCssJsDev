@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS files/style.css">
+    <title>2022Week52HTML-Test2</title>
+</head>
+<body>
+
+    <div class="dateheure" id="dateheure">Date et heure</div>
+    <div class="chrono" id="chrono">Chronomètre</div>
+
+    <div class="all">
+        
+        <div class="left">
+
+            <div class="input">
+                <span id="label">Capital initial</span>
+                <input type="text" id="theAction" name="action" size="20">
+                <button type="button" onclick="getAction();">Enter</button>
+            </div>
+    
+            <div class="container1">
+                
+                <div class="box1">
+                    <p class="textup">Capital</p>
+                    <p class="textbottom1" id="textbottom1"></p>
+                </div>
+                
+            </div>
+    
+            <div class="container2">
+                
+                <div class="box2">
+                    <p class="textup">Cible 1%</p>
+                    <p class="textbottom2" id="textbottom2"></p>
+                </div>
+                <div class="box3">
+                    <p class="textup">Cible 2%</p>
+                    <p class="textbottom3" id="textbottom3"></p>
+                </div>
+                <div class="box4">
+                    <p class="textup">Cible 3%</p>
+                    <p class="textbottom4" id="textbottom4"></p>
+                </div>
+    
+            </div>
+            
+            <div class="container3">
+    
+                <div class="box5">
+                    <p class="textup">Max -5%</p>
+                    <p class="textbottom5" id="textbottom5"></p>
+                </div>
+                <div class="box6">
+                    <p class="textup">Max -10%</p>
+                    <p class="textbottom6" id="textbottom6"></p>
+                </div>
+            
+            </div>
+    
+            <div class="container4">
+    
+                <div class="box7">
+                    <p class="textup">Lots max</p>
+                    <p class="textbottom7" id="textbottom7"></p>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <div class="right">
+
+            <div class="input">
+                <span id="label">Cours DJ Future</span>
+                <input type="text" id="theAction2" name="action2" size="20">
+            </div>
+
+            <div class="input">
+                <span id="label">Cours DJ CFD</span>
+                <input type="text" id="theAction3" name="action3" size="20">
+            </div> 
+
+            <div class="input">
+                <span id="label">Valeur PP CFD</span>
+                <input type="text" id="theAction4" name="action4" size="20">
+            </div> 
+
+            <div class="input">
+                <span id="label">Nom PP CFD</span>
+                <input type="text" id="theAction5" name="action5" size="20">
+            </div>
+
+            <button type="button" onclick="getAction2();">Enter</button>
+            <button type="button" onclick="getAction3();">Clear</button>
+
+            <div class="container1">
+                
+                <div class="box1">
+                    <p class="textup">Ecart</p>
+                    <p class="textbottom8" id="textbottom8"></p>
+                </div>
+                
+            </div>
+
+            <div class="container2">
+                
+                <div class="box8">
+                    <p class="textup">Convertion</p>
+                    <p class="textbottom9" id="textbottom9"></p>
+                </div>
+                
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!-- Intégrer JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Intégrer les scripts de la page -->
+    <script src="JS files/app.js"></script>
+
+    <!-- Intégrer les scripts de données de trading -->
+    <script src="JS files/appstocks.js"></script>
+
+</body>
+</html>
