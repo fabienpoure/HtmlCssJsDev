@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="entete">
+        <img src="phototop.jpg" class="phototop">
+        <div class="comment">Logiciel de calcul de gain/capital sur une période définie</div>
+        <img src="photoprofil.jpeg" class="photoprofil">
+        <div class="titrepage">Outil plan de trading</div>    
+        <div class="soustitrepage">Fabien Poure - Le 13/02/2023</div>
+    </div>
+    
+    <div class="saisie">
+
+        <input type="" class="capital" id="capital" value = "7200">Capital en euros
+            <img src="i.png" class="info" id="i1"><br/>        
+            <dialog class="dial" id = "dial1">
+                <b>Capital en euros</b><br/>
+                Saisissez dans ce champ la valeur en euros du capital initial.<br/>
+                Le nombre 7.200 correspondra, par exemple à un capital initial de 7.200 euros.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess1();">
+            </dialog>
+
+        <input type="" class="cible" id="cible" value = "2">Cible en %
+            <img src="i.png" class="info" id="i2"><br/>        
+            <dialog class="dial" id = "dial2">
+                <b>Cible en %</b><br/>
+                Saisissez dans ce champ la cible de gain journalier en % (pourcentage du montant du capital).<br/>
+                Le chiffre 1 correspondra, par exemple, à une cible de 1%. Pour un capital de 2.000 euros,<br/>
+                la cible de gain en euros sera ainsi de 20 euros.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess2();">
+            </dialog>
+        
+        
+        <input type="date" id="sdate">Date de départ<script>document.getElementById("sdate").valueAsDate = new Date();</script>
+            <img src="i.png" class="info" id="i3"><br/>        
+            <dialog class="dial" id = "dial3">
+                <b>Date de départ</b><br/>
+                Date du premier jour du plan de trading.<br/>
+                Si la date correspond à un jour "non tradable" (Samedi, Dimanche, en Juillet, Août ou Décembre),<br/>
+                le plan commencera le premier jour "tradable" suivant.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess3();">
+            </dialog>
+        
+        
+        <input type="" class="nbjours" id="nbjours" value = "365">Nombre de jours de calcul        
+            <img src="i.png" class="info" id="i4"><br/>        
+            <dialog class="dial" id = "dial4">
+                <b>Nombre de jours de calcul</b><br/>
+                Nombre de jours calendaires (y compris Samedi, Dimanche, jours de Juillet, Août et Décembre)<br/>
+                pris en compte pour calculer le plan de trading. Le nombre 365 correspond, par exemple, 
+                à un<br/>plan de trading calculé sur une année complète.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess4();">
+            </dialog>
+            
+        <hr>
+
+        <input type="" class="capital" id="fonds" value = "0">Versement de fonds en une seule fois
+            <img src="i.png" class="info" id="i5"><br/>        
+            <dialog class="dial" id = "dial5">
+                <b>Versement de fonds en une seule fois</b><br/>
+                Saisissez dans ce champ un montant supplémentaire que vous souhaitez ajouter à votre capital<br/>
+                à une date précise. Le montant indiqué est en euros.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess5();">
+            </dialog>
+
+        <input type="date" id="datefonds">Date de versement<script>document.getElementById("datefonds").valueAsDate = new Date();</script>
+            <img src="i.png" class="info" id="i6"><br/>        
+            <dialog class="dial" id = "dial6">
+                <b>Date de versement</b><br/>
+                Indiquez la date de versement du montant supplémentaire<br/>que vous souhaitez ajouter à votre capital.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess6();">
+            </dialog>
+        
+        <hr>
+
+        <input type="" class="capital" id="mensuel" value = "0">Versement de fonds chaque mois
+            <img src="i.png" class="info" id="i7"><br/>
+            <dialog class="dial" id = "dial7">
+                <b>Versement de fonds chaque mois</b><br/>
+                Saisissez dans ce champ un montant supplémentaire que vous souhaitez ajouter à votre capital<br/>
+                chaque mois à une date précise. Le montant indiqué est en euros.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess7();">
+            </dialog>
+
+        <input type="date" id="datemensuel">Date de versement chaque mois<script>document.getElementById("datemensuel").valueAsDate = new Date();</script>
+            <img src="i.png" class="info" id="i8"><br/>        
+            <dialog class="dial" id = "dial8">
+                <b>Date de versement chaque mois</b><br/>
+                Indiquez la date de versement chaque mois du montant supplémentaire<br/>que vous souhaitez ajouter à votre capital.
+                La date du 03/12/2027 indiquera,<br/>par exemple, que la somme sera versée au capital le 3 de chaque mois à partir<br/>
+                du 03/12/2027.<br/><br/>
+                <input type="button" class="dialbutton" value="Ok" onclick="closeMess8();">
+            </dialog>
+        
+        <hr>
+        
+        <input type="button" class="calcbutton" value="Calculer" onclick="getAction();">
+
+    </div>
+
+    <div class="main" id="main">
+        
+        <div class="date" id="date"></div>
+        <div class="gain" id="gain"></div>
+        <div class="final" id="final"></div>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="messbox.js"></script>
+
+</body>
+</html>

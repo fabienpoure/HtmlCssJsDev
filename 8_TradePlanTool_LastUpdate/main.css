@@ -1,0 +1,205 @@
+body
+{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+}
+
+.entete
+{
+    width: 920px;
+    height: 300px;
+    margin-top: 50px;
+}
+    .phototop
+    {
+        /* Dimension */
+        width: 910px;
+        height: 300px;
+
+        /* Aspect */
+        object-fit: cover;
+        border: 5px solid;
+        border-color: #FFFFFF;
+        
+        /* Animation */
+        transition: opacity .3s ease-in-out;
+    }
+
+    .phototop:hover
+    {
+        /* Assombrissement de 30% quand hover */
+        opacity: 70%;
+    }
+
+    .photoprofil
+    {       
+        /* Dimension */
+        width: 180px;
+        height: 180px;
+
+         /* Position */
+        position: relative;
+        z-index: auto;
+        top: -108px;
+        right: -670px;
+
+        /* Aspect */
+        border: 5px solid;
+        border-color: #FFFFFF;
+        border-radius: 130px;
+        
+        /* Animation */
+        transition: scale .3s ease-in-out;
+    }
+
+    .photoprofil:hover 
+    {
+        /* Agrandissement de 10% quand hover */
+        scale: 1.1;
+    }
+
+    .titrepage
+    {
+        position: relative;
+        top: -507px;
+        left: 40px;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 250%;
+    }
+
+    .soustitrepage
+    {
+        position: relative;
+        top: -502px;
+        left: 42px;
+        color: #FFFFFF;
+    }
+
+    .comment
+    {
+        position: relative;
+        color: #FFFFFF;
+    }
+    
+.saisie
+{
+    width: 790px;
+    margin-top: 36px;
+    margin-bottom: 15px;
+    background-color:#8EB5D4;
+    padding: 35px 60px 15px 60px;
+    font-size: 25px;
+    border: 5px solid;
+    border-color: #FFFFFF;
+}
+
+    #sdate, #datefonds, #datemensuel
+    {
+        width: 245px;
+    }
+    
+    input
+    {
+        margin-bottom: 20px;
+        font-size: 20px;
+        margin-right: 20px;
+
+        color: #3A4E68;
+        border: 3px solid;
+    }
+
+    .calcbutton
+    {
+        width: 250px;
+        height: 53px;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #3A4E68;
+        color: white;
+        border: 5px solid;
+    }
+
+    .info
+    {
+        width: 20px;
+        position: relative;
+        top: 4px;
+        right: -15px;
+        opacity:0.3;
+    }
+
+    .info:hover
+    {
+        opacity: 1.0;
+    }
+
+    .dial
+    {
+        font-size: 20px;
+        padding-bottom: 0px;
+        position: relative;
+        z-index: auto;
+        top: -100px;
+        right: -700px;
+    }
+
+    .dialbutton
+    {
+        width: 90px;
+        height: 45px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #3A4E68;
+        color: white;
+    }
+
+    hr 
+    {
+        border: 0;
+        height: 1px;
+        background-color: #3A4E68;
+        margin-bottom: 30px;
+    }
+
+.main
+{
+    width: 890px;
+    display: flex;
+    background-color:#8EB5D4;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 5px solid;
+    border-color: #FFFFFF;
+}
+
+    .date
+    {
+        flex: 1;
+        margin-left: 155px;
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .gain
+    {
+        flex: 1;
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .final
+    {
+        flex: 1;
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    
