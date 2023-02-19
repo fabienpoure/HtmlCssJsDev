@@ -1,0 +1,56 @@
+body
+{
+    width: fit-content;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(57, 57, 57);
+}
+
+input
+{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.saisie
+{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(223 216 216);
+    padding: 35px 0px 15px 60px;
+    font-size: 25px;
+}
+
+.main
+{
+    width: 900px;
+    display: flex;
+    background-color: white;
+
+    padding: 10px;
+
+}
+
+.date
+{
+    flex: 1;
+    margin-left: 155px;
+    font-size: 25px;
+}
+
+.gain
+{
+    flex: 1;
+    font-size: 25px;
+}
+
+.final
+{
+    flex: 1;
+    font-size: 25px;
+}
