@@ -1,0 +1,31 @@
+body
+{
+    background-color: #000000;
+}
+
+.photoprofil
+    {       
+        /* Position */
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-top: -90px;
+        margin-left: -90px;
+ 
+        /* Dimensions */
+        width: 180px;
+        height: 180px;
+
+        /* Aspect */
+        border: 5px solid;
+        border-color: #FFFFFF;
+        border-radius: 130px;
+
+        /* Animation */
+        transition: transform .7s ease-in-out;
+    }
+
+.photoprofil:hover 
+{
+    transform: rotate(360deg);
+}
