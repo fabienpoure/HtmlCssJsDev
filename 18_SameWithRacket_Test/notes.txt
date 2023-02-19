@@ -1,0 +1,31 @@
+
+Schéma de collision:
+    
+    ( xRack1 , yRack1 )                 --------------      ( xRack1 + wRack1 , yRack1 )
+    ( x1A , y1A )                       -            -      ( x1B , y1A )
+                                        -      R     -
+                                        -      A     -
+                                        -      K     -
+                                        -      E     -
+                                        -      T     -
+                                        -            -      Ball
+                                        -      1     -      ( xBall , yBall )
+                                        -            -
+                                        -            -
+                                        -            -
+     ( xRack1 , yRack1 + hRack1 )       --------------      ( xRack1 + wRack1 , yRack1 + hRack1 )
+     ( x1A , y1B )                                          ( x1B , y1B )
+
+Simplification des conditions:
+
+    x1A = xRack1
+    x1B = xRack1 + wRack1
+    y1A = yRack1
+    y1B = yRack1 + hRack1
+
+Collision si:
+
+        ( yBall >= y1A )
+    AND ( yBall <= y1B )
+    AND ( xBall <= x1B )
+    AND ( xBall >= x1B - wBall )
