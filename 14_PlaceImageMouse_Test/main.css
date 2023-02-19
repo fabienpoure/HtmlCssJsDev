@@ -1,0 +1,23 @@
+body
+{
+    /* Couleur de fond */
+    background-color: red;
+}
+
+.social, .print
+{
+    /* Position du logo */
+    position: absolute;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.xy
+{
+    color: #FFFFFF;
+    font-weight: bold;
+}
