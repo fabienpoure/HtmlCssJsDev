@@ -1,0 +1,18 @@
+body
+{
+    /* Couleur de fond */
+    background-color: black;
+}
+
+#containerBalle, #containerRacket1, #containerRacket2
+{
+    /* Position de la balle */
+    position: absolute;
+}
+
+.balle, .racket1, .racket2
+{
+    /* Position de la balle */
+    position: absolute;
+}
+

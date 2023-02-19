@@ -1,0 +1,70 @@
+
+--------------------------------------------------------------------------------------------------------------------
+        Calcul schémas de collision ball / Raquets
+--------------------------------------------------------------------------------------------------------------------
+
+Schéma de collision racket 1:
+    
+    ( xRack1 , yRack1 )                 --------------      ( xRack1 + wRack1 , yRack1 )
+    ( x1A , y1A )                       -            -      ( x1B , y1A )
+                                        -      R     -
+                                        -      A     -
+                                        -      K     -
+                                        -      E     -
+                                        -      T     -
+                                        -            -      Ball
+                                        -      1     -      ( xBall , yBall )
+                                        -            -
+                                        -            -
+                                        -            -
+     ( xRack1 , yRack1 + hRack1 )       --------------      ( xRack1 + wRack1 , yRack1 + hRack1 )
+     ( x1A , y1B )                                          ( x1B , y1B )
+
+Simplification des conditions:
+
+    x1A = xRack1
+    x1B = xRack1 + wRack1
+    y1A = yRack1
+    y1B = yRack1 + hRack1
+
+Collision si:
+
+        ( yBall >= y1A )
+    AND ( yBall <= y1B )
+    AND ( xBall <= x1B )
+    AND ( xBall >= x1B - wBall )
+
+--------------------------------------------------------------------------------------------------------------------
+
+Schéma de collision racket 2:
+    
+    ( xRack2 , yRack2 )                 --------------      ( xRack2 + wRack2 , yRack2 )
+    ( x2A , y2A )                       -            -      ( x2B , y2A )
+                                        -      R     -
+                                        -      A     -
+                                        -      K     -
+            Ball                        -      E     -
+            ( xBall , yBall )           -      T     -
+                                        -            -      
+                                        -      2     -      
+                                        -            -
+                                        -            -
+                                        -            -
+     ( xRack2 , yRack2 + hRack2 )       --------------      ( xRack2 + wRack2 , yRack2 + hRack2 )
+     ( x2A , y2B )                                          ( x2B , y2B )
+
+Simplification des conditions:
+
+    x2A = xRack2
+    x2B = xRack2 + wRack2
+    y2A = yRack2
+    y2B = yRack2 + hRack2
+
+Collision si:
+
+        ( yBall >= y2A )
+    AND ( yBall <= y2B )
+    AND ( xBall >= x2A )
+    AND ( xBall <= x2A + wBall )
+
+--------------------------------------------------------------------------------------------------------------------
