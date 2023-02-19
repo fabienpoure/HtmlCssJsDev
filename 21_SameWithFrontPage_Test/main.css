@@ -1,0 +1,103 @@
+body
+{
+    /* Couleur de fond */
+    background-color: black;
+}
+
+.lancement
+{
+    /* Position du div lancementscore */
+    position: absolute;
+    top: 260px;
+    left: 760px;
+    
+    /* Largeur du div lancement */
+    width: 300px;
+
+    /* Disposition des éléments dans le div lancement */
+    display: flex;
+    flex-direction: column;
+}
+
+#pong
+{
+    /* Largeur du logo pong */
+    width: 300px;    
+
+    /* Interligne entre le logo et le bouton */
+    padding-bottom: 60px;
+
+    /* Centrage du logo pong */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start
+{
+    /* Taille du bouton start */
+    height: 50px;
+    width:150px;
+
+    /* Centrage du bouton start */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Aspect du bouton start */
+    background: rgb(50, 50, 50);
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-style: normal;
+}
+
+.score
+{ 
+    /* Position du score */
+    position: absolute;
+    top: 300px;
+    left: 530px;
+ 
+    /* Aspect du score */
+    color: rgb(50, 50, 50);
+    font-size: 300px;
+    font-family: monospace;
+    font-style: normal;  
+}
+
+.enteteL, .enteteR
+{ 
+    /* Aspect du score */
+    color: rgb(134, 134, 134);
+    font-size: 20px;
+    font-family: monospace;
+    font-style: normal;  
+}
+
+.enteteL
+{ 
+    /* Position du score */
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.enteteR
+{ 
+    /* Position du score */
+    position: absolute;
+    top: 10px;
+    left: 1275px;
+}
+
+#containerBalle, #containerRacket1, #containerRacket2
+{
+    /* Position des containers ball et rackets */
+    position: absolute;
+}
+
+.balle, .racket1, .racket2
+{
+    /* Position des ball et rackets */
+    position: absolute;
+}
+
