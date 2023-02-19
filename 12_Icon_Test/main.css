@@ -1,0 +1,30 @@
+body
+{
+    background-color: black;
+}
+
+.social
+{
+    /* Remplissage de la div */
+    width: fit-content;
+    
+    /* Position */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 400px;
+    
+    /* Dimensions */
+    font-size: 120px;
+
+    /* Aspect */
+    color: white;
+
+    /* Transformation */
+    transition: color .3s ease-in-out;
+}
+
+#logo1:hover, #logo2:hover, #logo3:hover, #logo4:hover, #logo5:hover
+{
+    /* Aspect */
+    color: red;
+}
