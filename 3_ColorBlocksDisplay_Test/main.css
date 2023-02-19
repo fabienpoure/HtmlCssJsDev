@@ -1,0 +1,110 @@
+body
+{
+    width: fit-content;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(84,84,84));;
+}
+
+.headcontainer
+{
+    margin-top: 20px;
+    padding-top: 20px;
+
+    background-color: white;
+}
+
+.container
+{
+    display: grid;
+    
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 20px 20px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    place-items:  center;
+
+    background-color: white;
+}
+
+
+.block
+{
+    width: 200px;
+    height: 100px;
+    
+    background-color: blue;
+}
+
+.longcontainer
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    place-items:  center;
+
+    background-color: white;
+}
+
+.longblock
+{
+    width: -webkit-fill-available;
+    height: 100px;
+    
+    background-color: yellow;
+}
+
+.leftcontainer
+{
+    display: grid;
+    
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px 20px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    place-items:  center;
+
+    background-color: white;
+}
+
+.leftblock
+{    
+    width: 420px;
+    height: 100px;
+    
+    background-color: red;
+}
+
+.rightcontainer
+{
+    display: grid;
+    
+    grid-template-columns: 200px 1fr;
+    grid-gap: 20px 20px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    place-items:  center;
+
+    background-color: white;
+}
+
+.rightblock
+{    
+    width: 420px;
+    height: 100px;
+    
+    background-color: green;
+}
+
