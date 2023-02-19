@@ -1,0 +1,12 @@
+body
+{
+    /* Couleur de fond */
+    background-color: black;
+}
+
+.balle
+{
+    /* Position de la balle */
+    position: absolute;
+}
+
